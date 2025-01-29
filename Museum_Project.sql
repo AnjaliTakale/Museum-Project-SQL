@@ -5,7 +5,6 @@ use sqlprj2;
 show tables;
 
 -- 1. Retrieve the full name of artists along with the names of the museums where their works are displayed.
-
 SELECT artist.full_name, museum.name,work.name
 FROM artist
 JOIN work ON artist.artist_id = work.artist_id
